@@ -29,11 +29,11 @@ export type episodefromapi={
 }
 
 export type locationfromapi={
-    id?: number,
+    id?: number|null,
     name: string,
-    type?: string
-    dimension?: string,
+    type?: string|null
+    dimension?: string|null,
     residents: string[]
-    url: string,
-    created?: string
+    url: string|null,
+    created?: string|null
 }

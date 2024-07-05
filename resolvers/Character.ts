@@ -14,7 +14,8 @@ export const Character={
         return content
     },
     location:async (parent:Characterfromapi):Promise<locationfromapi>=>{
-        if(parent.origin.name=="unknown"){
+        console.log(parent)
+        if(parent.location.name=="unknown"){
             return{
                 name: "unknown",
                 url: "unknown",
